@@ -1,0 +1,58 @@
+import type { InnovationStage } from '../types';
+
+export const INNOVATION_STAGES: InnovationStage[] = [
+  {
+    id: "idea",
+    stageNumber: "STAGE 01",
+    name: "IDEA",
+    shortDesc: "Identify a problem worth solving.",
+    fullDesc: "Great engineering begins not with a premature solution, but with obsessive empathy for an unmet human or planetary need. Engineers interrogate first principles: What is broken? Why does current technology fail? What are the thermodynamic or physical boundaries?",
+    action: "Needs discovery, stakeholder interviewing, and boundary definition.",
+    deliverable: "Problem Definition & Requirement Specification (PRD)",
+  },
+  {
+    id: "design",
+    stageNumber: "STAGE 02",
+    name: "DESIGN",
+    shortDesc: "Turn the idea into a system.",
+    fullDesc: "Translating abstract requirements into mathematical models, architectural blueprints, circuit schematics, and code contracts. In this phase, tradeoffs between cost, speed, reliability, and thermodynamic efficiency are rigorously optimized.",
+    action: "CAD modeling, finite element analysis, microservice schema design, and circuit simulation.",
+    deliverable: "Technical Blueprint & Engineering Architecture",
+  },
+  {
+    id: "prototype",
+    stageNumber: "STAGE 03",
+    name: "PROTOTYPE",
+    shortDesc: "Build the first working version.",
+    fullDesc: "Bridging the chasm between paper theory and physical reality. Engineers fabricate breadboards, spin up micro-clusters, 3D print mechanical assemblies, and write MVP algorithms to test core hypotheses under tangible conditions.",
+    action: "Rapid fabrication, PCB milling, firmware flashing, and alpha code deployment.",
+    deliverable: "Proof of Concept (PoC) & Alpha Hardware/Software",
+  },
+  {
+    id: "test",
+    stageNumber: "STAGE 04",
+    name: "TEST",
+    shortDesc: "Break it. Measure it. Improve it.",
+    fullDesc: "Engineers intentionally subject the prototype to extreme stress, thermal shock, packet loss, vibration cycles, and security penetration. If it doesn't fail under testing, you haven't pushed it hard enough.",
+    action: "Vibration shakers, fuzz testing, load injection, and telemetry regression analysis.",
+    deliverable: "Stress Analysis & Validation Certification Report",
+  },
+  {
+    id: "innovation",
+    stageNumber: "STAGE 05",
+    name: "INNOVATION",
+    shortDesc: "Create something better.",
+    fullDesc: "Iteration transforms a functional gadget into a revolutionary standard. Engineers refine topologies, strip away unnecessary mass and code complexity, apply novel materials, and integrate AI acceleration for 10x performance gains.",
+    action: "Algorithm optimization, design for manufacturing (DFM), and cost reduction.",
+    deliverable: "Patented Innovation & Production-Ready Specification",
+  },
+  {
+    id: "impact",
+    stageNumber: "STAGE 06",
+    name: "IMPACT",
+    shortDesc: "Make it useful in the real world.",
+    fullDesc: "The ultimate validation of engineering is societal transformation. Deploying clean water to arid farmlands, launching satellites that map atmospheric ozone, or powering secure financial transactions for billions.",
+    action: "Global scaling, lifecycle monitoring, sustainable recycling, and societal integration.",
+    deliverable: "Planetary Scale System & Quantifiable Human Impact",
+  },
+];

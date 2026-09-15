@@ -1,0 +1,102 @@
+import type { EventScheduleItem, EventSpeaker } from '../types';
+
+export const EVENT_SCHEDULE: EventScheduleItem[] = [
+  {
+    time: "09:30 AM",
+    title: "System Initialization & Delegate Check-In",
+    category: "CEREMONY",
+    location: "Main Concourse & Digital Badge Terminal",
+    description: "Delegates scan custom Engineer 2.0 digital passes, collect RFID badges, and interact with the physical student innovation showcase booths.",
+  },
+  {
+    time: "10:15 AM",
+    title: "Inaugural Address & Visvesvaraya Memorial Tribute",
+    category: "KEYNOTE",
+    location: "Auditorium Prime (Hall A)",
+    description: "Commemorating the 165th birth anniversary of Sir M. Visvesvaraya; highlighting the transition from foundational hydraulic engineering to sovereign AI infrastructure.",
+    speaker: "Dr. Ananya Narayanan",
+  },
+  {
+    time: "11:15 AM",
+    title: "Keynote: Engineering the Next Hundred Years",
+    category: "KEYNOTE",
+    location: "Auditorium Prime (Hall A)",
+    description: "How sovereign AI models, clean fusion energy, and autonomous robotics are converging to redefine planetary civil engineering.",
+    speaker: "Prof. Vikramaditya Sen",
+  },
+  {
+    time: "12:00 PM",
+    title: "Live Engineering Challenge: Urban Flood Simulation",
+    category: "CHALLENGE",
+    location: "Interactive Arena & Hack Lounge",
+    description: "Participants compete in real-time teams to deploy smart weir gates, sensor arrays, and AI hydrological models to protect a virtual megacity from severe flood risk.",
+  },
+  {
+    time: "01:15 PM",
+    title: "Networking Luncheon & Technical Demonstrations",
+    category: "SHOWCASE",
+    location: "Innovation Gallery & Outdoor Robotics Arena",
+    description: "Hands-on live flight demonstrations of autonomous agricultural drones and quadruped robotic assistance platforms.",
+  },
+  {
+    time: "02:30 PM",
+    title: "Grand Innovation Showcase: Finalist Pitches",
+    category: "SHOWCASE",
+    location: "Auditorium Prime (Hall A)",
+    description: "Top 6 university engineering teams present their working prototypes before an expert jury of venture architects and industry chief engineers.",
+  },
+  {
+    time: "04:15 PM",
+    title: "Panel: Ethics, AI, and the Dignity of Engineering",
+    category: "PANEL",
+    location: "Auditorium Prime (Hall A)",
+    description: "A candid debate on algorithmic safety, critical infrastructure resilience, and the ethical responsibilities of modern software and hardware architects.",
+    speaker: "Dr. Rohini Mehta & Panelists",
+  },
+  {
+    time: "05:00 PM",
+    title: "Visvesvaraya Innovation Awards & Closing Ceremony",
+    category: "CEREMONY",
+    location: "Auditorium Prime (Hall A)",
+    description: "Felicitation of outstanding student innovations, challenge winners, and formal induction of the Engineer 2.0 cohort.",
+  },
+];
+
+export const EVENT_SPEAKERS: EventSpeaker[] = [
+  {
+    id: "spk-01",
+    name: "Dr. Ananya Narayanan",
+    role: "Chief Technology Advisor & Chair of Hydraulic Resilience",
+    organization: "National Institute of Urban Infrastructure",
+    topic: "Modernizing Visvesvaraya's Hydraulic Foundations in the Age of Extreme Weather",
+    domainBadge: "CIVIL & HYDRAULICS",
+    avatarSeed: "ananya",
+  },
+  {
+    id: "spk-02",
+    name: "Prof. Vikramaditya Sen",
+    role: "Director of Autonomous Systems Laboratory",
+    organization: "Institute of Advanced Robotics & AI",
+    topic: "Embodied AI: Giving Digital Intelligence Physical Form and Kinetic Agency",
+    domainBadge: "AI & EMBODIED ROBOTICS",
+    avatarSeed: "vikram",
+  },
+  {
+    id: "spk-03",
+    name: "Dr. Rohini Mehta",
+    role: "VP of Semiconductor Hardware Architecture",
+    organization: "Silicon Dynamics Global",
+    topic: "2nm Lithography, Chiplets, and the Future of Sovereign Computing",
+    domainBadge: "VLSI & SEMICONDUCTORS",
+    avatarSeed: "rohini",
+  },
+  {
+    id: "spk-04",
+    name: "Col. Rajeshwardas Sharma (Retd.)",
+    role: "Chief Cyber Defense Architect",
+    organization: "Critical Infrastructure Defense Command",
+    topic: "Hardening Power Grids and Nuclear Controls Against Quantum-Era Cyber Incursions",
+    domainBadge: "CYBER DEFENSE",
+    avatarSeed: "rajesh",
+  },
+];
