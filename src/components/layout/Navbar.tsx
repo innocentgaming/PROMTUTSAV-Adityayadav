@@ -8,6 +8,7 @@ interface NavbarProps {
   isMuted: boolean;
   onToggleMute: () => void;
   onPlayClick: () => void;
+  onOpenTerminal?: () => void;
 }
 
 const NAV_ITEMS = [
@@ -27,6 +28,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   isMuted,
   onToggleMute,
   onPlayClick,
+  onOpenTerminal,
 }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -114,6 +116,22 @@ export const Navbar: React.FC<NavbarProps> = ({
 
         {/* Right CTA & Sound Control */}
         <div className="hidden sm:flex items-center gap-3">
+          {/* Cyber Terminal Toggle */}
+          {onOpenTerminal && (
+            <button
+              onClick={() => {
+                onPlayClick();
+                onOpenTerminal();
+              }}
+              className="p-2 text-technical-dim hover:text-cyan-accent hover:bg-white/5 rounded-sm border border-transparent hover:border-cyan-accent/30 transition-colors flex items-center gap-1 text-xs font-mono"
+              title="Open Cyber Terminal Console (~)"
+              aria-label="Open Cyber Terminal"
+            >
+              <Terminal className="w-4 h-4 text-cyan-accent" />
+              <span className="hidden lg:inline text-[11px] text-cyan-accent">TERMINAL</span>
+            </button>
+          )}
+
           {/* Sound Toggle */}
           <button
             onClick={onToggleMute}
